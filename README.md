@@ -18,7 +18,9 @@ curl -L https://github.com/golang-migrate/migrate/releases/download/$version/mig
 
 1. Copy the `.env.sample` file and rename it to `.env`.
 2. Update the environment variables in the `.env` file to match your preferences.
-3. Run the following command to copy the `.env.sample` file to create your own .env:
+3. You will need to add the `.env` file to the root of your project using:
+   ```touch .env```
+5. Run the following command to copy the `.env.sample` file to populate your .env with the necessary vars:
    ```
    make copyenv
    ```
